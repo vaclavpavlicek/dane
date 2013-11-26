@@ -18,7 +18,7 @@ public class Dane {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        int vydelekKoruny = 23455;
+        int vydelekKoruny = 23455;  // Deklarace proměné vydelekKoruny na 23455.
         int vydelekHalere = vydelekKoruny * 100 ;
       
         System.out.println("Výdělek v korunách: " + vydelekKoruny);
