@@ -6,6 +6,8 @@
 
 package dane;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Venda
@@ -17,24 +19,14 @@ public class Dane {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+            
+        Objekty objekty = new Objekty();
         
-        int vydelekKoruny = 23455;  // Deklarace proměné vydelekKoruny na 23455.
-        int vydelekHalere = vydelekKoruny * 100 ;
-      
-        System.out.println("Výdělek v korunách: " + vydelekKoruny);
-        System.out.println("Výdělek v haléřích: " + vydelekHalere);
+        objekty.prevodKorun();
         
-        int danKoruny = vydelekKoruny / 100 * 35 ;
-        int danHalere = danKoruny * 100 ;
+        objekty.dane();
         
-        System.out.println("Daň v korunách " + danKoruny );
-        System.out.println("Daň v haléřích " + danHalere );
-        
-        int zbytekKoruny = vydelekKoruny - danKoruny;
-        int zbytekHalere = vydelekHalere - danHalere;
-        
-        System.out.println("Zbytek po odečtení daně v korunách " + zbytekKoruny);
-        System.out.println("Zbytek po odečtení daně v haléřích " + zbytekHalere);
+        objekty.zbytek();
         
     }
     
