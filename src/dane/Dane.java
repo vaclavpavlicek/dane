@@ -6,8 +6,6 @@
 
 package dane;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Venda
